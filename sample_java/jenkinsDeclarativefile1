@@ -15,6 +15,7 @@ pipeline {
         stage ('Maven Build') {
            steps {
                sh  "cd sample_java"
+               sh  "pwd"
                sh "mvn clean package"
            }
         }
